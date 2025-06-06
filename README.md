@@ -43,27 +43,37 @@ Dưới đây là các thuộc tính trong tập dữ liệu:
 
 ```bash
 pip install streamlit numpy joblib pandas matplotlib seaborn scikit-learn
-Hướng Dẫn Cài Đặt và Sử Dụng Dự Đoán Ung Thư Phổi
-🔧 Cài Đặt
-Sao chép kho lưu trữ
-git clone <đường-dẫn-kho-lưu-trữ>
+Dự Đoán Ung Thư Phổi
+Dự án sử dụng mô hình KNN để dự đoán ung thư phổi dựa trên dữ liệu triệu chứng.
+Cài Đặt
+Yêu Cầu
 
-Chuyển đến thư mục dự án
-cd <thư-mục-dự-án>
+Python 3.x
+Jupyter Notebook
+Streamlit
+Git
 
-Cài đặt các gói cần thiết
-pip install -r requirements.txt
+Hướng Dẫn Cài Đặt
 
-Kiểm tra tệp mô hình
-Đảm bảo các tệp sau có trong thư mục Model:
+Sao chép kho lưu trữgit clone <đường-dẫn-kho-lưu-trữ>
 
+
+Chuyển đến thư mục dự áncd <thư-mục-dự-án>
+
+
+Cài đặt các gói cần thiếtpip install -r requirements.txt
+
+
+Kiểm tra tệp mô hìnhĐảm bảo các tệp sau có trong thư mục Model:
 Model/knn_model.pkl: Mô hình KNN đã huấn luyện.
 Model/scaler.pkl: Bộ chuẩn hóa dữ liệu.
 
-📖 Hướng Dẫn Sử Dụng
+
+
+Hướng Dẫn Sử Dụng
 1. Notebook (lung-cancer-prediction.ipynb)
 
-Mở tệp bằng Jupyter Notebook.
+Mở bằng Jupyter Notebook.
 Chạy từng ô để:
 Khám phá dữ liệu.
 Huấn luyện mô hình KNN.
@@ -73,39 +83,37 @@ Huấn luyện mô hình KNN.
 
 2. Ứng Dụng Streamlit (app.py)
 
-Chạy ứng dụng:
-
-streamlit run app.py
+Chạy ứng dụng:streamlit run app.py
 
 
 Nhập thông tin:
-Giới tính: Chọn Nam/Nữ.
-Tuổi: Nhập giá trị từ 10 đến 100.
-Triệu chứng: Chọn Có/Không hoặc dán chuỗi giá trị (ví dụ: 1 2 1 1 2 1 2 2 1 1 2 2 1).
+Giới tính: Nam/Nữ.
+Tuổi: 10-100.
+Triệu chứng: Chọn Có/Không hoặc dán chuỗi (ví dụ: 1 2 1 1 2 1 2 2 1 1 2 2 1).
 
 
-Nhấn nút 🧠 Dự đoán để xem kết quả.
+Nhấn 🧠 Dự đoán để xem kết quả.
 
-🤖 Mô Hình
+Mô Hình
 
 Thuật Toán: K-Nearest Neighbors (KNN)
 Độ Chính Xác: 92.86% trên tập kiểm tra
 Tệp Đã Lưu:
-Model/knn_model.pkl: Mô hình KNN đã huấn luyện.
-Model/scaler.pkl: Bộ chuẩn hóa dữ liệu.
+Model/knn_model.pkl
+Model/scaler.pkl
 
 
 
-👨‍🎓 Tác Giả
+Tác Giả
 
 Họ và Tên: Lê Doãn Anh
 Mã Sinh Viên: 2121050186
 Lớp: DCCTCT66_07E
 Giảng Viên Hướng Dẫn: ThS. Nguyễn Thị Phương Bắc
 
-⚠️ Lưu Ý
+Lưu Ý
 
-Đây là công cụ dự đoán, không thay thế chẩn đoán y tế. Vui lòng tham khảo ý kiến bác sĩ.
+Công cụ này chỉ mang tính dự đoán, không thay thế chẩn đoán y tế. Hãy tham khảo ý kiến bác sĩ.
 Đảm bảo các tệp dữ liệu và mô hình được đặt đúng thư mục trước khi chạy.
 
 
