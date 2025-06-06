@@ -88,7 +88,7 @@ Dự án sử dụng thuật toán **K-Nearest Neighbors (KNN)** để dự đo�
 - Nhập thông tin:
   - **Giới tính**: Chọn Nam/Nữ.
   - **Tuổi**: Nhập giá trị từ 10 đến 100.
-  - **Triệu chứng**: Chọn Có/Không hoặc dán chuỗi giá trị (ví dụ: `1 2 1 1 2 1 2 2 1 1 2 2 1`).
+  - **Triệu chứng**: Chọn Có/Không 
 - Nhấn nút **🧠 Dự đoán** để xem kết quả.
 
 ## 🤖 Mô Hình
